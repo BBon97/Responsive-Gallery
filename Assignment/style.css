@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body{
+    font-family: "Roboto Condensed",sans-serif;
+    background:linear-gradient(270deg,black, rgb(72, 72, 92));
+    min-height: 100vh;
+}
+
+
+header{
+max-width: 1200px;
+margin: 0 auto;
+padding: 0.8rem 0 2rem 0.9rem;
+
+
+}
+
+
+h1{
+color: white;
+text-shadow: 0.1rem 0.1rem 0.2rem black;
+letter-spacing: 0.1rem;
+
+
+
+}
+
+.wrapper{
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+   
+    
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 4rem;
+}
+
+
+
+.card{padding: 0 0.6rem 0 0;}
+
+
+.blue-box{
+background-color: rgb(78, 116, 131);
+max-width: 180px;
+height: 7rem;
+border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    position: relative;
+
+}
+
+.blue-box img{
+position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.title-box{
+    background: linear-gradient(10deg,rgb(174, 145, 145), rgb(243, 224, 224));
+    max-width: 180px;
+    padding: 0.6rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    
+}
+
+.title-box p{
+
+text-align: center;
+
+}
+
+section{
+    max-width: 1200px;
+margin: 0 auto;
+padding: 2rem 0.9rem 0 0.9rem;
+
+    
+}
+
+section p{color: white;}
+
+
+@media all and (max-width:999px)
+
+{
+.grid{grid-template-columns: repeat(3,1fr);}
+
+.wrapper{max-width: 700px;}
+
+header{
+    max-width: 700px;}
+
+    header h1{font-size: 1.8rem;}
+
+    section{
+        max-width: 680px;
+    }
+
+        section p {
+            font-size: 0.9rem;
+        }
+
+        
+
+
+}
+
+@media all and (max-width:600px)
+
+{
+
+.grid{
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
+.wrapper{
+    
+    max-width: 300px;
+    
+}
+
+header{
+    max-width: 300px;
+}
+
+section{
+    max-width: 390px;
+    padding-bottom: 1rem;
+}
+
+
+
+}
